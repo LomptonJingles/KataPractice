@@ -27,7 +27,7 @@ public class RomanNumeralTest {
     @Test
     public void fiveToVTest() {
         IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
-        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(3);
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(5);
         Assertions.assertEquals("V", romanNumeral);
     }
 }
