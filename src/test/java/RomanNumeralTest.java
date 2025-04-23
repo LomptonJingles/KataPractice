@@ -16,4 +16,18 @@ public class RomanNumeralTest {
         String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(2);
         Assertions.assertEquals("II", romanNumeral);
     }
+
+    @Test
+    public void threeToIIITest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(3);
+        Assertions.assertEquals("III", romanNumeral);
+    }
+
+    @Test
+    public void fiveToVTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(3);
+        Assertions.assertEquals("V", romanNumeral);
+    }
 }
