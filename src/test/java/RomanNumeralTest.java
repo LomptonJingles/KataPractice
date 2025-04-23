@@ -25,6 +25,13 @@ public class RomanNumeralTest {
     }
 
     @Test
+    public void fourToIVTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(4);
+        Assertions.assertEquals("IV", romanNumeral);
+    }
+
+    @Test
     public void fiveToVTest() {
         IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
         String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(5);
