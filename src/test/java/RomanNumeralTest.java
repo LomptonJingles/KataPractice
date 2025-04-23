@@ -38,5 +38,39 @@ public class RomanNumeralTest {
         Assertions.assertEquals("V", romanNumeral);
     }
 
+    @Test
+    public void sixToVITest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(6);
+        Assertions.assertEquals("VI", romanNumeral);
+    }
+
+    @Test
+    public void sevenToVIITest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(7);
+        Assertions.assertEquals("VII", romanNumeral);
+    }
+
+    @Test
+    public void eightToVIIITest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(8);
+        Assertions.assertEquals("VIII", romanNumeral);
+    }
+
+    @Test
+    public void nineToVIIITest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(9);
+        Assertions.assertEquals("IX", romanNumeral);
+    }
+
+
+
+
+
+
+
 
 }
