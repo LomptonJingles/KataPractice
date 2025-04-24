@@ -75,10 +75,27 @@ public class RomanNumeralTest {
     }
 
 
+    @Test
+    public void twentyNineToXXIXTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(29);
+        Assertions.assertEquals("XXIX", romanNumeral);
+    }
 
 
+    @Test
+    public void thirtyFourToXXXIVTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(34);
+        Assertions.assertEquals("XXXIV", romanNumeral);
+    }
 
-
+    @Test
+    public void thirtyEightToXXXVIIITest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(38);
+        Assertions.assertEquals("XXXVIII", romanNumeral);
+    }
 
 
 }
