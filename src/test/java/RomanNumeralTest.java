@@ -98,4 +98,12 @@ public class RomanNumeralTest {
     }
 
 
+    @Test
+    public void fortyToXLTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(40);
+        Assertions.assertEquals("XL", romanNumeral);
+    }
+
+
 }
