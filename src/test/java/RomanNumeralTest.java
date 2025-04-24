@@ -112,5 +112,37 @@ public class RomanNumeralTest {
         Assertions.assertEquals("XLI", romanNumeral);
     }
 
+    @Test
+    public void fortyFourToXLIVTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(44);
+        Assertions.assertEquals("XLIV", romanNumeral);
+    }
+
+
+    @Test
+    public void fiftyToLTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(50);
+        Assertions.assertEquals("L", romanNumeral);
+    }
+
+    @Test
+    public void eightyNineToLXXXIXTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(89);
+        Assertions.assertEquals("LXXXIX", romanNumeral);
+    }
+
+
+    @Test
+    public void ninetyToXCTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(90);
+        Assertions.assertEquals("XC", romanNumeral);
+    }
+
+
+
 
 }
