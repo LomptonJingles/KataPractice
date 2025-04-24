@@ -178,5 +178,13 @@ public class RomanNumeralTest {
     }
 
 
+    @Test
+    public void threeThousandOverloadTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(3001);
+        Assertions.assertEquals("Overflow error", romanNumeral);
+    }
+
+
 
 }
