@@ -163,4 +163,20 @@ public class RomanNumeralTest {
         Assertions.assertEquals("CM", romanNumeral);
     }
 
+    @Test
+    public void threeThousandToMMMTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(3000);
+        Assertions.assertEquals("MMM", romanNumeral);
+    }
+
+    @Test
+    public void negativeOneToErrorTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(-1);
+        Assertions.assertEquals("negative number error", romanNumeral);
+    }
+
+
+
 }
