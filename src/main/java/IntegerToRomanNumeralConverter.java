@@ -5,6 +5,10 @@ public class IntegerToRomanNumeralConverter {
         ArrayList<String> symbols = new ArrayList<>();
         StringBuilder romanNumeral = new StringBuilder();
         while (number > 0) {
+            while (number > 3000) {
+                symbols.add("Overflow error");
+                number -= number;
+            }
             while (number >= 900) {
                 symbols.add("M");
                 number -= 1000;

@@ -186,5 +186,17 @@ public class RomanNumeralTest {
     }
 
 
+    @Test
+    public void fiveThousandOverloadTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(5000);
+        Assertions.assertEquals("Overflow error", romanNumeral);
+    }
 
+    @Test
+    public void twoThousandEightHundredAndThirtyEightToMMDCCCXXXVIIITest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(2838);
+        Assertions.assertEquals("MMDCCCXXXVIII", romanNumeral);
+    }
 }
