@@ -142,7 +142,11 @@ public class RomanNumeralTest {
         Assertions.assertEquals("XC", romanNumeral);
     }
 
-
-
+    @Test
+    public void fourHundredToCDTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(400);
+        Assertions.assertEquals("CD", romanNumeral);
+    }
 
 }
