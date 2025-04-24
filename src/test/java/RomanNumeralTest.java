@@ -67,6 +67,14 @@ public class RomanNumeralTest {
     }
 
 
+    @Test
+    public void twentySixToXXVITest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(26);
+        Assertions.assertEquals("XXVI", romanNumeral);
+    }
+
+
 
 
 
