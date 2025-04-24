@@ -149,4 +149,18 @@ public class RomanNumeralTest {
         Assertions.assertEquals("CD", romanNumeral);
     }
 
+    @Test
+    public void eightHundredNinetyNineToDCCCXCIXTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(899);
+        Assertions.assertEquals("DCCCXCIX", romanNumeral);
+    }
+
+    @Test
+    public void nineHundredToCMTest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(900);
+        Assertions.assertEquals("CM", romanNumeral);
+    }
+
 }
