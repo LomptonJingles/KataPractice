@@ -42,6 +42,7 @@ public class IntegerToRomanNumeralConverter {
                 number -= 10;
                 if (number < 0) {
                     symbols.add(symbols.size()-1, "I");
+                    number+= 1;
                 }
             }
             while (number >= 4) {
@@ -50,6 +51,8 @@ public class IntegerToRomanNumeralConverter {
 
                 if (number < 0) {
                     symbols.add(symbols.size()-1, "I");
+                    number+= 1;
+
                 }
             }
             if (number >= 1) {
@@ -59,6 +62,9 @@ public class IntegerToRomanNumeralConverter {
         }
         for (String symbol : symbols) {
             romanNumeral.append(symbol);
+        }
+        if (romanNumeral.isEmpty()) {
+            romanNumeral.append("0 or below zero error");
         }
         return romanNumeral.toString();
     }

@@ -174,7 +174,7 @@ public class RomanNumeralTest {
     public void negativeOneToErrorTest() {
         IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
         String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(-1);
-        Assertions.assertEquals("negative number error", romanNumeral);
+        Assertions.assertEquals("0 or below zero error", romanNumeral);
     }
 
 
