@@ -5,6 +5,14 @@ public class IntegerToRomanNumeralConverter {
         ArrayList<String> symbols = new ArrayList<>();
         StringBuilder romanNumeral = new StringBuilder();
         while (number > 0) {
+            while (number >= 90) {
+                symbols.add("C");
+                number -= 100;
+                if (number < 0) {
+                    symbols.add(symbols.size()-1, "X");
+                    number+= 10;
+                }
+            }
             while (number >= 40) {
                 symbols.add("L");
                 number -= 50;
