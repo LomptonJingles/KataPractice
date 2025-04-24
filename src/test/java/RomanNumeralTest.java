@@ -105,5 +105,12 @@ public class RomanNumeralTest {
         Assertions.assertEquals("XL", romanNumeral);
     }
 
+    @Test
+    public void fortyOneToXLITest() {
+        IntegerToRomanNumeralConverter integerToRomanNumeralConverter = new IntegerToRomanNumeralConverter();
+        String romanNumeral = integerToRomanNumeralConverter.convertToRomanNumeral(41);
+        Assertions.assertEquals("XLI", romanNumeral);
+    }
+
 
 }
