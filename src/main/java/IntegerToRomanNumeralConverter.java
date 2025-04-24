@@ -10,6 +10,7 @@ public class IntegerToRomanNumeralConverter {
                 number -= 50;
                 if (number < 0) {
                     symbols.add(symbols.size()-1, "X");
+                    number+= 10;
                 }
             }
             while (number >= 9) {
